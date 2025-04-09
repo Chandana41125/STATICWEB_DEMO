@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('profile')">Profile</li>
+      <li onclick="showSection('courses')">Courses</li>
+      <li onclick="showSection('grades')">Grades</li>
+      <li onclick="showSection('settings')">Settings</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="header">
+      <h1>Welcome, Student!</h1>
+      <p>This is your student dashboard where you can track your courses, view grades, and manage your profile.</p>
+    </div>
+
+    <!-- Dynamic Sections -->
+    <div id="home" class="section">
+      <h3>Home</h3>
+      <p>Welcome to your student dashboard. Use the sidebar to navigate between sections.</p>
+    </div>
+
+    <div id="profile" class="section" style="display:none;">
+      <h3>Profile</h3>
+      <p>Here is your profile information. You can update your personal details and more.</p>
+    </div>
+
+    <div id="courses" class="section" style="display:none;">
+      <h3>Courses</h3>
+      <ul class="courses">
+        <li>Introduction to Computer Science</li>
+        <li>Mathematics for Engineers</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Web Development Basics</li>
+      </ul>
+    </div>
+
+    <div id="grades" class="section" style="display:none;">
+      <h3>Grades</h3>
+      <p>Check your grades. You might link this section to more detailed data in a full application.</p>
+    </div>
+
+    <div id="settings" class="section" style="display:none;">
+      <h3>Settings</h3>
+      <p>Update your account settings or customize your dashboard experience here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
